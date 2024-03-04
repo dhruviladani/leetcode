@@ -4,7 +4,7 @@ public:
         string r = "" ;
         for(int i=0; i<s.length(); i++){
             if(isalnum(s[i])){
-                r += tolower(s[i]);
+                r += toupper(s[i]);
             }
         }
         string t = r;

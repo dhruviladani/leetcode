@@ -1,3 +1,5 @@
+//1st method (converting int to string)
+
 class Solution {
 public:
     bool isPalindrome(int x) {
@@ -7,5 +9,26 @@ public:
         reverse(s.begin(), s.end());
         
         return t==s;
+    }
+};
+
+
+// 2nd method (without converting into string)
+
+class Solution {
+public:
+    bool isPalindrome(int x) {
+        int reverse = 0;
+        int y = x;
+        if(x < 0){
+            return false;
+        }
+        while(x != 0){
+            int d = x % 10;
+            reverse = reverse * 10 + d;
+            x = x/10;
+        }
+
+        return y == reverse;
     }
 };

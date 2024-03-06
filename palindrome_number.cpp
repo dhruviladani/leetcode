@@ -18,8 +18,8 @@ public:
 class Solution {
 public:
     bool isPalindrome(int x) {
-        int reverse = 0;
-        int y = x;
+        long long reverse = 0;
+        long long y = x;
         if(x < 0){
             return false;
         }

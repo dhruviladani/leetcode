@@ -10,7 +10,6 @@ public:
                 profit = max(profit, (prices[i+1] - temp));
             }
         }
-        
         return profit;
     }
 };
